@@ -32,51 +32,54 @@
     </nav>
 
     <dialog class='rules'>
-        <div class='rules-div'>
-            <h2>Setup and goal</h2>
+    <div class='rules-div'>
+        <h2>Setup and goal</h2>
 
-            <p>
-                There are <span class="highlight">C</span> equal tubes, 
-                each one capable of holding up to <span class="highlight">H</span> items (marbles).
-            </p>
-            <p>
-                Such items can have <span class="highlight">N</span> different colors.
-                For each color, there are exactly <span class="highlight">H</span> items,
-                so in total there are <span class="highlight">N•H</span> items.
-            </p>
-            <p>
-                Initially, <span class="highlight">N</span> of such tubes are filled with these items,randomly sorted, and the remaining <span class="highlight">K=C-N</span> tubes are empty.
-            </p>
-            <p>
-                The goal is to move these items among the tubes to sort them and have <span class="highlight">N</span> full tubes, each one with <span class="highlight">H</span> items of the same color. 
-            </p>
+        <p>
+            There are <span class="highlight">C</span> identical tubes, 
+            each holding max <span class="highlight">H</span> marbles.
+        </p>
+        <p>
+            Marbles have <span class="highlight">N</span> distinct colors
+            with exactly <span class="highlight">H</span> marbles per color
+            (total: <span class="highlight">N•H</span> marbles).
+        </p>
+        <p>
+            Initially, <span class="highlight">N</span> tubes are randomly filled with all marbles
+            and <span class="highlight">K = C - N</span> tubes are empty.
+        </p>
+        <p>
+            Goal: Arrange marbles so <b>each tube contains <span class="highlight">H</span> marbles of a single color</b>
+            with all tubes filled to capacity.
+        </p>
 
-            <h2>Moving rules</h2>
+        <h2>Moving rules</h2>
 
-            <p>You can move the item on the top of a tube <span class="highlight">A</span> to tube <span class="highlight">B</span> if either:</p>
-            <ul>
-                <li><span class="highlight">B</span> is empty, or</li>
-                <li>the top item in <span class="highlight">B</span> has the same color of the item to move.</li>
-            </ul>
-            
-            <p>As an additional rule, you can:</p>
-            <ul>
-                <li>move as many items of the same color as possible, from <span class="highlight">A</span> to <span class="highlight">B</span>, or</li>
-                <li>move only one item at a time, from <span class="highlight">A</span> to <span class="highlight">B</span>.</li>
-            </ul>
+        <p>Move top marble from tube A to tube B if:</p>
+        <ul>
+            <li>Tube <span class="highlight">B</span> is <b>empty</b>, OR</li>
+            <li>Top marble of <span class="highlight">B</span> <b>matches the color</b> of the moved marble</li>
+        </ul>
+        
+        <p>Movement options (configurable):</p>
+        <ul>
+            <li>Move <b>all consecutive same-colored marbles</b> at once, OR</li>
+            <li>Move only <b>one marble at a time</b></li>
+        </ul>
 
-            <p>Finally, you can optionally choose to initially hide the color of all the items except the top one in each tubes.
-            <br>The color of such items is revealed as soon as they become the top items.</p>
-
-            <h2>Resources</h2>
+        <p>Optional mode: Only the <b>top marble</b> is initially visible. Lower marbles reveal when becoming top.</p>
+		
+		<h2>Resources</h2>
 
             <p>See <a href="http://kociemba.org/themen/waterball/colorsort.html">here</a> for more details on how to solve the game.</p>
 
-            <div class="dialog-buttons">
-                <button type="button" class="close">Close</button>
-            </div>
+        <div class="dialog-buttons">
+            <button type="button" class="close">Close</button>
         </div>
-    </dialog>
+    </div>
+</dialog>
+	
+	
 
     <dialog class='settings'>
         <div class='settings-div'>
