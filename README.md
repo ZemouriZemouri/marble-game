@@ -1,7 +1,7 @@
 
-# Marble Sorting Game
+# Marble & Liquid Sorting Game
 
-A puzzle game where players sort colored marbles into tubes by matching colors.
+A puzzle game where players sort colored marbles into tubes by matching colors. This same game can be changed into a liquid game (switch top right-hand corner).
 
 ## Start (nodejs) server
 ```
