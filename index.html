@@ -130,4 +130,14 @@
         <p>Created by Zemouri <a href="https://github.com/zemourizemouri"><i class="fab fa-github"></i></a></p>
     </footer>
 </body>
+<script>
+  // SPA-routing
+  (function(){
+    const redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect !== location.pathname) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
 </html>
