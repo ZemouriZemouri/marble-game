@@ -3,7 +3,7 @@
 
 A puzzle game where players sort colored marbles into tubes by matching colors.
 
-## Start de (nodejs) server
+## Start (nodejs) server
 ```
 npm install express
 node server.js
